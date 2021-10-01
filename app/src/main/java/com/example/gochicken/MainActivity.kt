@@ -20,10 +20,10 @@ class MainActivity : AppCompatActivity() {
             if(username.text.toString().equals("admin")&&
                 password.text.toString().equals("admin")){
                 val intent = Intent(this, HomeActivity::class.java)
-                val msg = intent.putExtra("name", username.text.toString())
                 startActivity(intent)
             }else {
-                val snackbar = Snackbar.make(it, "incorrect username or password", Snackbar.LENGTH_SHORT).setAction("Action", null)
+                val snackbar = Snackbar.make(it, "incorrect username or password",
+                    Snackbar.LENGTH_SHORT).setAction("Action", null)
                 snackbar.show()
             }
         }
