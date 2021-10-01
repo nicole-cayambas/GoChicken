@@ -27,7 +27,6 @@ class PhotoActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.navi_favorites -> {
-                Toast.makeText(this, "Favorites", Toast.LENGTH_SHORT).show()
                 favoritesFragment = FavoritesFragment()
                 supportFragmentManager
                     .beginTransaction()
@@ -37,7 +36,6 @@ class PhotoActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
                     .commit()
             }
             R.id.navi_library -> {
-                Toast.makeText(this, "Library", Toast.LENGTH_SHORT).show()
                 libraryFragment = LibraryFragment()
                 supportFragmentManager
                     .beginTransaction()
@@ -47,7 +45,6 @@ class PhotoActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
                     .commit()
             }
             R.id.navi_search -> {
-                Toast.makeText(this, "Search", Toast.LENGTH_SHORT).show()
                 searchFragment = SearchFragment()
                 supportFragmentManager
                     .beginTransaction()
