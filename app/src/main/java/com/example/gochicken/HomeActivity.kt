@@ -1,5 +1,6 @@
 package com.example.gochicken
 
+import android.content.Intent
 import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -89,6 +90,10 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                     .replace(R.id.content_frame, aboutFragment)
                     .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
                     .commit()
+            }
+            R.id.navi_photo -> {
+                val intent = Intent(this, PhotoActivity::class.java)
+                startActivity(intent)
             }
         }
         drawer.closeDrawer(GravityCompat.START)

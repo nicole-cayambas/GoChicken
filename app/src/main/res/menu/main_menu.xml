@@ -13,4 +13,8 @@
         android:id="@+id/navi_about"
         android:title="About"
         android:icon="@drawable/ic_about"/>
+    <item
+        android:id="@+id/navi_photo"
+        android:icon="@drawable/ic_photo"
+        android:title="Photo"/>
 </menu>
